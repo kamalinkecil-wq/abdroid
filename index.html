@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android Camera Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 500px;
+      margin: 25px auto;
+      padding: 20px;
+      background: #1e293b;
+      border-radius: 15px;
+    }
+
+    button {
+      padding: 13px 20px;
+      margin: 8px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    video {
+      width: 100%;
+      background: black;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Android Camera Lab</h2>
+  <p>Laboratorium streaming kamera pribadi</p>
+
+  <div class="card">
+    <h3>Mode Kamera Android</h3>
+    <video id="cameraPreview"
+           autoplay playsinline muted></video>
+    <p id="cameraStatus">Kamera belum aktif</p>
+    <button id="startCamera">Mulai Kamera</button>
+    <button id="stopCamera">Hentikan Kamera</button>
+  </div>
+
+  <div class="card">
+    <h3>Mode Viewer Laptop</h3>
+    <video id="remoteVideo"
+           autoplay playsinline controls></video>
+    <p id="viewerStatus">Belum terhubung</p>
+  </div>
+
+</body>
+</html>
